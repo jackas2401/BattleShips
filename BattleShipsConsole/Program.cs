@@ -6,6 +6,8 @@ using BattleShipsBLL.Game;
 using BattleShipsBLL.Game.Utilities;
 using static BattleShipsBLL.Game.PlayersBoard;
 
+//text
+
 namespace BattleShipsConsole
 {
     class Program
