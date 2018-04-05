@@ -1,0 +1,57 @@
+Battleships Approach - Andrew Jackman	(Please see associated images (DesignScribbles*.jpeg))
+
+It's been a little while since I've been hands-on writing code so my first thoughts were of excitement that I might get the opportunity to do this more frequently.
+
+Once I calmed down, my instinct was to start breaking the problem down logically and to start scribbling (please see pictures in the same directory), this included:-
+- Drawing out some of the foundation classes 
+- Mapping out a game grid and driving out scenarios
+- Data and the flow using scenarios
+- Identifying which classes would be responsible for logic
+
+This is sometimes difficult for someone who is a perfectionist but had ensure that this had to be an MVP considering the limited time.
+
+Even though this was an MVP I tried to ensure the following:-
+- Abstraction of the game from UI for testing and so that it can be consumed by other clients
+- Make the game configurable but not complex to set-up (i.e. some provide some defaults where it'll work out of the box)
+- Self-contained classes so less message passing 
+- Consider areas where the game might be enhanced in future e.g. multiple players, new types of ship or other shapes, user levels
+- Use of enums to allow for readability and extensibility
+
+I approached this bottom-up in terms of coding all the foundation classes first, writing unit tests as I progressed.
+
+Assumptions
+-----------
+- All ships take one hit to sink
+
+POST MVP Enhancements (MVP+)
+----------------------------
+- User research & experience
+- Testability
+- Randomise CPU player names
+- Record more statistics (record shots fired, ships hit, ships remaining)
+- Game completes once the first player completes the board - this could be altered to allow 1st, 2nd, 3rd until everyone completes
+- Persistence of game data including leader board
+- Add some settings to be altered by UI e.g. how many CPU players, grid size
+- Randomise the playing order at which (currently computer always goes first)
+- MD Arrays are a bit old school, are there better collections to use? Less looping, less danger of index out of range. Need to check performance of LINQ.
+- Low risk that if someone configures a game with too many ships and they can't all fit on the board, need to add a check for this scenario
+- Currently very synchronous, consider asynchronous/events/push/events etc. to make an online/social game platform
+- Multiple devices
+- Multiple languages
+
+Next Steps
+----------
+- Revisit SOLID principles
+- Code Review
+- Further Testing (UI and UAT)
+- Coding standards including regions
+- Source control
+- CI/CD Pipeline (Build, Test, Code Analysis, Deployment)
+- Performance Testing
+
+
+Entity Framework Migrations
+---------------------------
+
+https://msdn.microsoft.com/en-us/library/jj591621(v=vs.113).aspx
+
