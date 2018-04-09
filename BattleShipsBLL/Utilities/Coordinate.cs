@@ -19,7 +19,7 @@ namespace BattleShipsBLL.Game.Utilities
         /// </summary>
         /// <param name="gridReference"></param>
         /// <param name="coordinate"></param>
-        /// <param name="gameSettings"></param>
+        /// <param name="gameHeight"></param>
         /// <param name="asciiCharA"></param>
         /// <returns></returns>
         public static bool ValidateGridReference(string gridReference, ref Coordinate coordinate, int gameHeight, int asciiCharA)

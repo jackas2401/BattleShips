@@ -145,9 +145,7 @@ namespace BattleShipsBLL.Game
                 _shapeCount++;
                 _shapeAdded = false;
 
-                // check that there's space on the board for scenarios where game settings have extreme values for ships/shapes
-                // TODO : AJAC - loop through cells to determine if we have any free space for next shape
-                
+                // check that there's space on the board for scenarios where game settings have extreme values for ships/shapes                
                 while (!_shapeAdded)
                 {
                     shape.PickRandomPosition(__gameSettings.Width - 1, __gameSettings.Height - 1, _random);
@@ -235,14 +233,14 @@ namespace BattleShipsBLL.Game
             return _shotResponse;
         }
 
-        private void RemoveShape(int shapeID)
+        private void RemoveShape(int shapeId)
         {
             //use the shape ID to update all the cells
             for (int y = 0; y < __gameSettings.Height; y++)
             {
                 for (int x = 0; x < __gameSettings.Width; x++)
                 {
-                    if (shapeID == BoardCells[y, x].ShapeID)
+                    if (shapeId == BoardCells[y, x].ShapeID)
                     {
                         BoardCells[y, x].CurrentStatus = GameCell.CellStatus.Hit;
                     }                    

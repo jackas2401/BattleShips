@@ -8,10 +8,10 @@
     {
         public enum CellStatus { Hit = -2, Miss = -1, Blank = 0, Ship = 1 };
 
-        private CellStatus __currentStatus = CellStatus.Blank;
-        private int __shapeID = 0;
+        public CellStatus _currentStatus = CellStatus.Blank;
+        private int _shapeId = 0;
         
-        public int ShapeID { get => __shapeID; set => __shapeID = value; }
-        public CellStatus CurrentStatus { get => __currentStatus; set => __currentStatus = value; }     
+        public int ShapeID { get => _shapeId; set => _shapeId = value; }
+        public CellStatus CurrentStatus { get => _currentStatus; set => _currentStatus = value; }     
     }
 }
