@@ -11,7 +11,7 @@ namespace BattleShipsBLL.Game
     public class GameBoard
     {
         public enum GameStatus { InProgress = 0, PlayerWins = 1 };
-        private enum CpuNames { Dave, Kirsty, Max, Nathan, Anne, Anthony, Gemma}
+        private enum CpuNames { Anthony }
 
         private List<Player> __players = new List<Player>();       
         public List<Player> Players { get => __players; }
