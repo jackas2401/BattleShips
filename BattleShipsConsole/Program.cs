@@ -122,8 +122,7 @@ namespace BattleShipsConsole
             StringBuilder _message = new StringBuilder(__tab);
 
             for (int x = 0; x < __gameSettings.Width; x++)
-            {
-                //use the ascii representation of A and column count to display sequential letters
+            {                
                 _message.Append((char)(__asciiCharA + x)).ToString();
                 _message.Append(__tab);
             }
