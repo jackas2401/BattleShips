@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BattleShipsConsole", "Battl
 		{CEEB6B3E-AE50-4FEF-91B2-933DD20D570C} = {CEEB6B3E-AE50-4FEF-91B2-933DD20D570C}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleShipsBLL.Tests.Unit", "BattleShipsBLL.Tests.Unit\BattleShipsBLL.Tests.Unit.csproj", "{B7FDDF2C-DDF6-4F26-B133-BC9DEB58A6A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{CD8125FA-3CB9-4FBB-A3E1-D1D64DB3D532}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD8125FA-3CB9-4FBB-A3E1-D1D64DB3D532}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD8125FA-3CB9-4FBB-A3E1-D1D64DB3D532}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7FDDF2C-DDF6-4F26-B133-BC9DEB58A6A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7FDDF2C-DDF6-4F26-B133-BC9DEB58A6A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7FDDF2C-DDF6-4F26-B133-BC9DEB58A6A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7FDDF2C-DDF6-4F26-B133-BC9DEB58A6A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
